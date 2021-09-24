@@ -1,0 +1,159 @@
+/*--Make sure both unvisited and visited links have the same color so people don't get confused--*/
+
+a:hover {
+    color: rgb(236, 10, 10);
+}
+
+* {
+    color:rgb(44, 146, 146)
+}
+
+body {
+    background-image: url("images/index/background.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-color: rgb(44, 146, 146);
+    display: grid;
+    grid-template-columns: 24% 1fr;
+    grid-template-rows: auto auto 1fr;
+    /*--I used the border function to replace the margin function--*/
+    margin: 3% 16%;
+}
+
+h1 {
+    background-color: rgb(219, 223, 223);
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: 0px;
+    padding:3%;
+    border-radius: 5px;
+}
+
+h4 {
+    text-align: center;
+    border-bottom: 2px solid rgb(44, 146, 146);
+}
+
+h1, h3, h4 {
+    color:rgb(129, 18, 101)
+}
+
+strong {
+    color: saddlebrown;
+    border-bottom: 1px solid saddlebrown;
+}
+
+em {
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*--A grid system in a grid--*/
+nav {
+    grid-row: 2;
+    grid-column: 1/3;
+    display: grid;
+    /*--default is justify-contect, items: streched; so I don't have to add them--*/
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+nav div {
+    background-color: rgb(219, 223, 223);
+    margin: 5% 1px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+/*--Make sure the navigation bar doesn't appear as normal link with a line at the bottom--*/
+nav a {
+    text-decoration: none;
+}
+
+/*--A new grid system--*/
+#left-side-bar {
+    padding-top: 20px;
+    grid-row: 3;
+    grid-column: 1/2;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    /*--Make sure the last grid item is at the end of the page--*/
+    align-content: space-between;
+}
+
+#picture {
+    width: 100%;
+    border-radius: 40%;
+    margin: auto auto;
+    display: block;
+    border: 3px solid rgb(219, 223, 223)
+}
+
+#contact-info > h4 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contact-info-detail > * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact-info {
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+
+#linkedin-logo {
+    width: 30px;
+    margin-right: 5px;
+    display: inline;
+    border-radius: 50%;
+    /*--Make sure the logos align--*/
+    float: left;
+}
+
+#gmail-logo {
+    border-radius: 50%;
+    width: 27px;
+    margin-right: 5px;
+    display: inline;
+    float: left;
+}
+
+#technical-skills {
+    padding: 5% 2%;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+main {
+    padding: 3% 6%;   
+    margin-left: 4px;
+    border-radius: 5px;
+    background-color: rgb(219, 223, 223); 
+}
+
+main > * {
+    padding: 10px 0px;
+}
+
+
+#experience-2 {
+    padding: 20px 0px;
+}
+
+#experience-3 {
+    padding-bottom: 20px;
+}
+
+
+     
