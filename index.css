@@ -129,6 +129,14 @@ nav a {
     float: left;
 }
 
+#website-logo {
+    border-radius: 50%;
+    width: 29px;
+    margin-right: 5px;
+    display: inline;
+    float: left;
+}
+
 #technical-skills {
     padding: 5% 2%;
     border-radius: 5px;
